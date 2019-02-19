@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="../dist/css/swiper.min.css">
+  <link rel="stylesheet" href="../dist/css/style.css">
+
+  <!-- Demo styles -->
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+      margin: 0;
+    }
+    img{
+      position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: black; /* in case the video doesn't fit the whole page*/
+  		background-image: /* our video */;
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+        margin: 0;
+	}  
+      }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+    <header class="site-header toggle-nav animated">
+        <div class="container">
+            <div class="site-branding">
+                <h1>
+                    <a href="index.html">Order of ‘Io</a>
+                </h1>
+            </div>
+            <nav class="site-navigation ">
+                <div class="menu-button navicon">Menu</div>
+                <ul class="nav">
+                    <li class="hidden-lg">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                      <a href="index.html">Home</a>
+                  </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Community</a>
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact</a>
+                  </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- END CONTAINER -->
+    </header>
+
+    <section class="hero text-centered">
+        <h2>This is the Home&nbsp;Page</h2>
+        <p>This is the hero section of the home page of a multi-page web site.</p>
+        <p>
+            <a class="button" href="about.html">Learn More About Us</a>
+            <a class="button alt" href="contact.html">Get in Touch</a>
+        </p>
+    </section>
+    
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><article><h1>E Pili Ana iā Mākou</h1><h4>A Return to the Ancients</h4>
+        <p>The Order of ‘Io began long before we were born, with our kūpuna of old who would follow the practice of Lōkahi. 
+          Allowing for aloha ‘āina, aloha kānaka, and aloha ‘o ‘Io keeping the balance in the self and the world around them. 
+          Then came a time when Pā‘ao, the warrior priest of the Taputapuatea Marae, voyaged in his cloud of ships to storm the shores of 
+          his fellow Polynesian brethren to uproot the core of our people, ‘Io. Conquering Moananuiākea Pā‘ao changed the face of our worship 
+          to his gods and the Order of ‘Io ended… or did it? The Order has returned and  wishes to go back to the ways of our kūpuna who 
+          first voyaged to the promised land of Hawaiki (Hawai‘i) with the mission of establishing here “thy house of ‘Io.” </p></article></div>
+      <div class="swiper-slide"><img src="../img/shyne.jpg"></div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+      <div class="swiper-slide">Slide 10</div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <section>
+    <h1>This is a section heading</h1>
+    <p>E howzit you faka? I neva seen you in forevaz!
+      You still wit dat wahine? Nah? Ahhh Das shetty.
+    </p>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="../dist/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>
